@@ -21,3 +21,6 @@ Download the extension as a .zip by looking for the “Download ZIP” button on
 The alternative is the same using git clone option.
 
 Now navigate in the resulting file dialog box until you are in the directory with a manifest.json file. 
+
+The main idea based on:
+https://github.com/jeromewu/gitpod-window (Thanks)
