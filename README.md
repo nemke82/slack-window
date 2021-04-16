@@ -4,15 +4,18 @@ Create Slack PWA experience with minimal UI and shortcuts
 The idea behind this is to create my own Slack PWA(like) application and avoid using Browser tab or Slack standalone application for my work environment. If you wish to customize please fork my repo and then edit following files:
 
 1) background.js <BR>
-chrome.pageAction.onClicked.addListener(({ url }) => { <BR>
-  let popupUrl = 'your-work-slack-address'; <BR>
-<BR>
+```
+chrome.pageAction.onClicked.addListener(({ url }) => {
+  let popupUrl = 'your-work-slack-address';
+```
 2) manifest.json <BR>
- "content_scripts": [ <BR>
-    { <BR>
-      "js": ["content.js"], <BR>
-      "matches": ["your-work-slack-address"] <BR>
-    } <BR>
+```
+ "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["your-work-slack-address"]
+    }
+```
 <BR>
 **How to install extension in your Chrome/Chromium Browser**
 
